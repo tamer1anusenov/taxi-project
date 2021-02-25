@@ -1,0 +1,24 @@
+{
+  "name": "another-website",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Qazaq",
+    "url": "https://html-css.kz"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/register": "^7.12.10",
+    "browser-sync": "^2.26.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.1.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
+}

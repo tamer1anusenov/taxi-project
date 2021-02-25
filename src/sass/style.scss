@@ -1,0 +1,36 @@
+@import 'vars';
+
+
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	font-family: $font;
+	font-size: 16px;
+	color: #000;
+
+}
+
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+
+	&:hover, &:focus {
+		outline: none;
+		text-decoration: none;
+		color: darken($color-primary, 5%);	
+	}
+}
+
+
+@import 'global/header';
+@import 'global/footer';
+
+@import 'pages/homepage';
+@import 'pages/about';
