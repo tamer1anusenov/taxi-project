@@ -79,7 +79,7 @@ body{
   /* slaider */
  .container{
    background-color: #e3e7ea;
-   max-height:  400px;
+   height:  400px;
    display:flex;
 
 
@@ -97,11 +97,40 @@ body{
   font-size: 30px;
   font-weight:100;
   margin-left:100px;
+  color:black;
+}
+.containe{
+  background-color: #fff;
+  height: 400px;
+  display:flex;
 
 }
+.iimg{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left:600px;
+  width: 200px;
+  height: 300px;
+
+}
+.txt{
+  margin-top:100px;
+  display: flex;
+  align-items: center;
+  position:absolute;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight:100;
+  margin-left:100px;
+  color:black;
+}
+.imgg{
+  margin-left:600px;
+  width: 300px;
+  height: 400px;
+}
 .pet{
-  
- margin-top:50px;
+  margin-top:50px;
   transform: translate(0,50%);
 }
 .slaider{ 
@@ -111,7 +140,7 @@ body{
   z-index: 1000;
 }
 .first{
-  width: 250px;
+ width: 250px;
  background-color: rgb(42, 159, 236);
  border: none;
  padding: 15px;
@@ -274,7 +303,7 @@ li{
   padding-bottom:10px;
 }
 .rex{text-decoration: none; color:black; padding-bottom:10px;}
-.rem{font-size: 18px; margin-bottom: 30px; }
+.rem{font-size: 12px; margin-bottom: 30px; }
 a{text-decoration: none;}
 .help{color:black;}
 .aid{
@@ -299,8 +328,32 @@ a{text-decoration: none;}
 .rex:hover{
   color:rgb(42, 159, 236);
 }
+.amd{
+  margin-top:100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:12px;
+}
+.text-subscribe{
+  margin-top:8px;
+  border:none;
+  background-color: #c9cfd6;
+}
+.mda{
+  display: flex;
+  background-color: #c9cfd6
+}
+.placeholder{
+  color:#ccc;
+}
+.btn-subscribe{
+  margin-top:8px;
+  background-color: inherit;
+}
+.s{
+  color:black;
+  font-family: 'Open Sans', sans-serif;
 
-
+}
 
 
 
