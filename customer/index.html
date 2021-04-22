@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kk">
+<html >
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -39,33 +39,51 @@
         </div>
         <!--Page Title & Icons End-->
 
-        <div class="hidden" style="font-family: 'Roboto', sans-serif;">
+        <div class="hidden">
             <div class="margin-top-10 height-auto" id="origin-input-container">
                 <div class="w-100 map-input-container map-input-container-top">
                     <span class="fas fa-location-arrow location-icon-rotate map-input-icon"></span>
-                    <div class="map-input display-flex">
+                    <div class="map-input display-flex" style="font-family: 'Roboto', sans-serif;">
                         <input id="origin-input" class="controls flex-1" type="text"
-                               placeholder="Шығу орнын енгізіңіз">
+                               placeholder="Шығу орнын енгізіңіз" style="font-family: 'Roboto', sans-serif;">
                         <span class="mic"><img src="../icons/microphone.svg" alt="Microphone Icon"></span>
                         <span class="remove">
                             <img src="../icons/cross-light.svg" alt="Remove Icon Light Color">
                         </span>
                     </div>
                 </div>
-                <div class="w-100 map-input-container map-input-container-bottom">
+                <div class="w-100 map-input-container map-input-container-bottom" >
                     <span class="map-input-icon"><img src="../icons/circle.svg"  alt="Current Location Icon"></span>
-                    <div class="map-input display-flex">
-                        <input id="destination-input" class="controls flex-1" type="text"
+                    <div class="map-input display-flex" >
+                        <input id="destination-input" class="controls flex-1" type="text" style="font-family: 'Roboto', sans-serif;"
                                placeholder="Бару керек орынды енгізіңіз">
                         <span class="mic"><img src="../icons/microphone.svg" alt="Microphone Icon"></span>
                         <span class="remove">
                             <img src="../icons/cross-light.svg"  alt="Remove Icon Light Color">
                         </span>
                     </div>
-                    <span class="dotted-line-index"></span>
+                </div>
+
+                <div class="w-100 map-input-container map-input-container-bottom" style="font-family: 'Roboto', sans-serif;">
+               <div ><img src="../icons/96px-Tenge_symbol.png" style="width: 13px; height:13px; position: relative; margin-left:15px; margin-top:12px;"></div>
+                <div style="width:300px;" style="font-family: 'Roboto', sans-serif;"> 
+                    <input id="origin-input" class="controls flex-1" type="text" style="padding-left: 17px; padding-bottom: 13px; font-family: 'Roboto', sans-serif;"
+                           placeholder="Бағаңызды енгізіңіз">
                 </div>
             </div>
+
+
+            <div class="w-100 map-input-container map-input-container-bottom">
+                <div ><img src="../icons/comment.svg" style="width: 16px; height:16px;  position: relative; margin-left:15px; margin-top:12px;" ></div>
+                 <div style="width:300px;">
+                     <input id="origin-input" class="controls flex-1" type="text" style="padding-left: 17px; padding-bottom: 13px; font-family: 'Roboto', sans-serif;"
+                            placeholder="Комментарий">
+                 </div>
+             </div>
+            </div>
         </div>
+
+        
 
         <!--Google Maps Start-->
         <div id="map" class="h-100"></div>
@@ -73,80 +91,31 @@
 
         <div class="not-map">
 
-            <!--Request Ride Button Container Start-->
+<!--Request Ride Button Container Start-->
             <div class="request-ride-btn hidden">
                 <button type="button" class="btn btn-primary">Көлікке тапсырыс беру</button>
             </div>
             <!--Request Ride Button Container End-->
+            
 
             <!--Choose a Car Container Start-->
             <div class="ride-options-bottom hidden">
+                <div style="padding-left:20px;">
                 <div class="cars-options">
                     <div class="car-option" data-about-target-id="about-section-1">
-                        <img src="../icons/audi.svg" alt="Car Option 1">
-                    </div>
-                    <div class="car-option active" data-about-target-id="about-section-2">
-                        <img src="../icons/limusine.svg" alt="Car Option 2">
-                    </div>
-                    <div class="car-option" data-about-target-id="about-section-3">
-                        <img src="../icons/minivan.svg" alt="Car Option 3">
-                    </div>
-                </div>
-                <div class="about-section">
-                    <div class="about-section-1 hidden">
-                        <div class="about-section-title">
-                            Эконом: <strong>300тг</strong> / 6.85  /км
-                            <span class="black-text">4 Минут </span>
-                        </div>
-                        <div class="about-section-more">
-                            ЕСКЕРТПЕ: Бұл шамамен алынған баға. Нақты құны сәйкесінше өзгеруі мүмкін
-                            қозғалысқа.
-                        </div>
-                    </div>
-                    <div class="about-section-2">
-                        <div class="about-section-title">
-                            <div class="about-section-title">
-                                Стандарт: <strong>500тг</strong> / 6.85 км /
-                                <span class="black-text">7 Минут </span>
-                            </div>
-                        </div>
-                        <div class="about-section-more">
-                            ЕСКЕРТПЕ: Бұл шамамен алынған баға. Нақты құны сәйкесінше өзгеруі мүмкін
-                             қозғалысқа.
-                        </div>
-                    </div>
-                    <div class="about-section-3 hidden">
-                        <div class="about-section-title">
-                            <div class="about-section-title">
-                                Супер: <strong>1000тг</strong> / 6.85 км /
-                                <span class="black-text">10 Минут</span>
-                            </div>
-                        </div>
-                        <div class="about-section-more">
-                            ЕСКЕРТПЕ: Бұл шамамен алынған баға. Нақты құны сәйкесінше өзгеруі мүмкін
-                            қозғалысқа.
-                        </div>
+                        <img src="../icons/audi.svg" alt="Car Option 1" style="  padding-left: 80px;">
                     </div>
                 </div>
                 <div class="payment-options">
                     <div class="send-wishes-container">
-                        <div class="float-left wishes">
-                            <img src="../icons/wishes.svg" class="h-100"  alt="Wishes Icon">
-                        </div>
+                        
                         <div class="payment-option-content">
                             Қалаған баға 
-                            <span class="payment-options-more">Қалаған бағаны жазыңыз</span>
+                            <span class="payment-options-more" style="font-size:26px;">300тг</span>
                         </div>
                     </div>
-                    <div class="default-payment-method-container display-flex">
-                        <div class="float-left wishes">
-                            <img src="../icons/cash.svg" alt="Cash Icon" class="h-100">
-                        </div>
-                        <div class="payment-option-content">
-                         Төлем
-                            <span class="payment-options-more">Әдетегі төлем түрі</span>
-                        </div>
-                    </div>
+                   
+                </div>
                 </div>
                 <div class="confirm-ride-btn">
                     <button type="button" class="btn btn-primary">Растау</button>
@@ -154,36 +123,7 @@
             </div>
             <!--Choose a Car Container End-->
 
-            <!--Wish Container Start-->
-            <div class="wish-container hidden">
-                <div class="close-wish">
-                        <span class="float-right">
-                            <img src="../icons/close.svg" alt="Close Icon">
-                        </span>
-                        <span class="clearfix"></span>
-                </div>
-                <div class="wish-content-intro-container">
-                    <span class="write-wishes-text">Жүргізушіге тілектер жазыңыз</span>
-                    <span class="float-right"><img src="../icons/angle-right.svg" alt="Angle Right Icon"></span>
-                </div>
-                <div class="font-weight-light wishes-main-text">
-                    <p>
-                        Жоғарыдағы сілтемені басу арқылы сіз жүргізушіге өз пікірлеріңізді немесе тілектеріңізді жаза аласыз.
-                    </p>
-                    <p>
-                        Өтінемін, сыпайы хабарлама жазып, тілектеріңізді білдіріңіз.
-                         Сіздің тілектеріңіз жүргізушіні ыңғайсыз етпейтініне көз жеткізіңіз.
-                         Сіздің сапарыңыздан рахат алыңыз!
-                    </p>
-                </div>
-                <div class="enter-wish hidden">
-                    <textarea class="width-100 height-100 font-weight-light" placeholder="Please enter your wishes here..."></textarea>
-                </div>
-                <div class="send-wish-btn hidden">
-                    <button type="button" class="btn btn-primary">Жіберу</button>
-                </div>
-            </div>
-            <!--Wish Container End-->
+           
 
             <!--Payment Options Container Start-->
             <div class="payment-options-container hidden">
@@ -210,12 +150,6 @@
                                 <img src="../icons/check.svg"  alt="Check Icon">
                             </span>
                         </li>
-                        <li>
-                            <span class="paypal-icon"><img src="../icons/paypal.svg"  alt="Paypal Icon"></span> PayPal
-                            <span class="float-right hidden check">
-                                <img src="../icons/check.svg"  alt="Check Icon">
-                            </span>
-                        </li>
                     </ul>
                 </div>
                 <div class="add-new-card-container">
@@ -228,11 +162,7 @@
             </div>
             <!--Payment Options Container End-->
 
-            <!--Tap on Car Red Text Start-->
-            <div class="tap-on-car hidden">
-                <span>Таңдаған машинаңызды түртіңіз</span>
-            </div>
-            <!--Tap on Car Red Text End-->
+
 
             <!--Tapped Car Information Container Start-->
             <div class="tapped-car-info hidden disabled">
@@ -259,9 +189,7 @@
                                     <span class="fas fa-star text-white font-weight-light"></span>
                                 </div>
                             </div>
-                            <div class="float-right profile-picture">
-                                <img src="../images/profile-1.png" alt="Profile Picture">
-                            </div>
+                            
                         </div>
                         <div class="margin-top-25">
                             <img src="../icons/mercedes.svg" alt="Mercedes Car" class="img-responsive">
@@ -290,22 +218,7 @@
                     </div>
                     <!--Chosen Car Information Container End-->
 
-                    <!--More Information About Chosen Car Container Start-->
-                    <div class="tapped-car-more-info">
-                        <button type="button" class="cancel-trip btn btn-transparent text-uppercase">Заказдан бас тарту</button>
-                        <div class="more-info-container">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus est pellentesque elit.
-                            </p>
-                            <p>
-                                Nisi scelerisque eu ultrices vitae auctor eu. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sit amet nisl suscipit adipiscing bibendum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!--More Information About Chosen Car Container End-->
+
 
                 </div>
             </div>
@@ -314,7 +227,7 @@
             <!--Submit Review Container Start-->
             <div class="submit-review hidden">
                 <div class="text-center driver-info">
-                    <img class="review-profile" src="../images/profile-1.png"  alt="Driver Picture">
+             
                     <div class="float-right close-review">
                         <img src="../icons/close.svg" alt="Close Icon">
                     </div>
@@ -349,9 +262,7 @@
                 <img src="../icons/close.svg" alt="Close Icon">
             </span>
         </div>
-        <div class="profile-picture text-center">
-            <img src="../images/profile-1.png" alt="Profile Picture">
-        </div>
+       
         <div class="profile-info">
             <div class="profile-name text-center">Nata Vacheishvili</div>
             <div class="profile-email text-center">nata_vacheishvili@gurucar.com</div>
@@ -451,6 +362,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1eGdP6hCYQ06z86dMEwoLNFMPYPbhgYs&libraries=places&callback=initMap"></script>
 </body>
 </html>
+
 
 
 
