@@ -193,13 +193,13 @@ $(document).ready(function(){
                 new google.maps.Point( 9, 0 )
             )
         };
-        var markerList = [{lat: 45.080029,lng: 64.679607},
-            {lat:45.080029,lng: 64.679607},
-            {lat: 45.080029, lng:64.679607},
-            {lat: 45.080029,lng: 64.679607},
-            {lat: 45.080029, lng:64.679607},
-            {lat: 45.080029, lng:64.679607},
-            {lat:45.080029, lng:64.679607}];
+        var markerList = [{lat: 42.262651,lng: -71.828033},
+            {lat:42.273543,lng: -71.817843},
+            {lat: 42.267627, lng: -71.810578},
+            {lat: 42.271398,lng: -71.802753},
+            {lat: 42.269234, lng:-71.810193},
+            {lat: 42.263405, lng:-71.816964},
+            {lat:42.272021, lng:-71.812448}];
         $('#searchingModal').modal('show');
         setTimeout(function(){
             for(var i=0;i<markerList.length;i++){
@@ -581,7 +581,7 @@ function multipleRoute(directionsService, directionsDisplay){
         location:"157 Highland Street, Worcester, MA",
         stopover:true
     }];
-    var coordinates = [{lat:45.080029,lng: 64.679607}];//////////////////////////////////////////////////
+    var coordinates = [{lat:42.270857,lng: -71.809520}];
     var icons = {
         end: new google.maps.MarkerImage(
             // URL
@@ -607,8 +607,8 @@ function multipleRoute(directionsService, directionsDisplay){
         )
     };
     directionsService.route({
-        origin: "Кызылорда, Казахстан",
-        destination: "Жалагаш, Кызыдорда, Казахстан",
+        origin: "100 Institute Rd, Worcester, MA",
+        destination: "919 main street, Worcester, MA",
         waypoints: waypts,
         optimizeWaypoints: true,
         travelMode: 'DRIVING'
@@ -620,7 +620,7 @@ function multipleRoute(directionsService, directionsDisplay){
             window.alert('Directions request failed due to ' + status);
         }
     });
-    makeMarker({lat:45.080029, lng:64.679607}, icons.end, "Route End");
+    makeMarker({lat:42.251450, lng:-71.819469}, icons.end, "Route End");
     for(var i=0;i<coordinates.length;i++){
         makeMarker(coordinates[i], icons.marker,"Route Stop");
     }
@@ -730,7 +730,6 @@ function showMapRequestPin(){
     },600);
 }
 
-//-----
 /**
  * @constructor
  */
@@ -802,7 +801,6 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(
     });
 };
 
-////////////////////////////////////////////////////////////////////enter route//////////////////////////////////
 AutocompleteDirectionsHandler.prototype.route = function() {
     if (!this.originPlaceId || !this.destinationPlaceId) {
         $('.request-ride-btn').addClass('hidden');
@@ -812,8 +810,8 @@ AutocompleteDirectionsHandler.prototype.route = function() {
     $('.request-ride-btn').removeClass('hidden');
     this.directionsService.route(
         {
-            origin: "Байтурсонова 48А, Кызылорда, Казахстан",
-            destination: "Набережная 1 Б, Кызылорда, Казахстан ",
+            origin: "157 Highland Street, Worcester MA",
+            destination: "919 Main Street, Worcester MA",
             travelMode: this.travelMode
         },
         function(response, status) {
